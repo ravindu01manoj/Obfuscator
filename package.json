@@ -1,0 +1,28 @@
+{
+  "name": "@ravindu01manoj/obfuscator",
+  "version": "1.0.0",
+  "description": "Javascript obfuscator",
+  "main": "./index.js",
+  "keywords": [
+    "Javascript",
+    "Obfuscator",
+    "Javascript-obfuscator"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ravindu Manoj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravindu01manoj/Obfuscator/issues"
+  },
+  "homepage": "https://github.com/ravindu01manoj/Obfuscator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "javascript-obfuscator": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravindu01manoj/Obfuscator.git"
+  }
+}
