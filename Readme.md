@@ -1,29 +1,48 @@
-# Best Javascript Obfuscator With Obfuscator.io
+# Javascript  Project Obfuscator
 
-***
+## Contents
 
-- [Ravindu Manoj](https://github.com/ravindu01manoj/)
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Author](#author)
 
-***
+## About <a name = "about"></a>
 
-## Installation 
+Obfuscate All JavaScript Files In One Click
+
+## Getting Started <a name = "getting_started"></a>
+
+Install The Package Using yarn Or npm
+
+### Installing
+
 ```sh
 npm i @ravindu01manoj/obfuscator
 ## or
 yarn add @ravindu01manoj/obfuscator
 ```
 
-***
+## Usage <a name = "usage"></a>
 
-## Example
 ```ts
 const { obfuscate, BEST_NODE_HIGH_PERFORMANCE_CONFIG } = require('@ravindu01manoj/obfuscator')
 const Source_Folder = '/example/folder/'
 const Store_Folder = '/example/obstore/'
 
+const Comment = {
+	top: 'Javascript Project Obfuscator \n Coded By Ravindu Manoj\n\nModified File : #filename#\nModified Date : #date#\nModified Time : #time#',
+	bottom: 'Powered By https://www.npmjs.com/package/@ravindu01manoj/obfuscator',
+	dont_set : false,
+	timeZone : 'Asia/Colombo', // Time Zone For #time# && #date#
+	deactive : false //set value as true to deactive comments 
+}
+// keywords == #filename# && #date# && #time# 
+
+
 function obfuscateFolder() {
 	console.log('starting...')
-	obfuscate(Source_Folder, Store_Folder, BEST_NODE_HIGH_PERFORMANCE_CONFIG)
+	obfuscate(Source_Folder, Store_Folder, BEST_NODE_HIGH_PERFORMANCE_CONFIG,Comment)
 	console.log(Source_Folder + 'Folder Successfull Obfuscated To ' + Store_Folder)
 }
 
@@ -46,7 +65,7 @@ const {
 } = require('@ravindu01manoj/obfuscator')
 
 ```
-# or
+## or
 
 ```ts
 const config = {
@@ -108,5 +127,6 @@ const config = {
 ```
 
 ***
+## ✍️ Author <a name = "author"></a>
 
-thanks to https://obfuscator.io/
+- [@Ravindu Manoj](https://github.com/ravindu01manoj)

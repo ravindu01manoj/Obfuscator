@@ -1,6 +1,6 @@
 {
   "name": "@ravindu01manoj/obfuscator",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Javascript obfuscator",
   "main": "./index.js",
   "keywords": [
@@ -24,5 +24,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ravindu01manoj/Obfuscator.git"
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
   }
 }
