@@ -32,8 +32,8 @@ function obfuscate(source_folder, store_folder, Config, Comment = {}) {
 	if (!store_folder.endsWith('/')) {
 		store_folder += '/'
 	}
-	Comment.top = Comment.top ? (Comment.dont_set ? Comment.top : (Comment.top.includes('\n') ? `/*\n${Comment.top}\n*/\n\n` : '// ' + Comment.top + '\n\n')) : cmt.a
-	Comment.bottom = Comment.bottom ? (Comment.dont_set ? Comment.bottom : (Comment.bottom.includes('\n') ? `\n/*\n${Comment.bottom}\n*/\n\n` : '\n\n// ' + Comment.bottom)) : cmt.b
+	Comment.top = Comment.top ? (Comment.dont_set ? Comment.top : (Comment.top.includes('\n') ? `/*\n${Comment.top}\n*/\n\n` : '// ' + Comment.top + '\n\n')) : (Comment.bottom ? '' : cmt.a)
+	Comment.bottom = Comment.bottom ? (Comment.dont_set ? Comment.bottom : (Comment.bottom.includes('\n') ? `\n/*\n${Comment.bottom}\n*/\n\n` : '\n\n// ' + Comment.bottom)) : (Comment.top ? '' : cmt.b)
 	if (Comment.deactive === true) Comment.top = Comment.bottom = '';
 	startObfuscate(source_folder, store_folder, Config, Comment)
 }
