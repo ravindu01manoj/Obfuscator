@@ -9,6 +9,7 @@ const {
 
 const Source_Folder = '/example/folder/'
 const Store_Folder = '/example/obstore/'
+const Bin_Path = '/example/.bin/'
 
 const Comment = {
 	top: 'Javascript Project Obfuscator \n Coded By Ravindu Manoj\n\nModified File : #filename#\nModified Date : #date#\nModified Time : #time#',
@@ -20,7 +21,7 @@ const Comment = {
 // keywords == #filename# && #date# && #time# 
 
 function start() {
-	obfuscate(Source_Folder, Store_Folder, BEST_NODE_HIGH_PERFORMANCE_CONFIG,Comment)
+	obfuscate(Source_Folder, Store_Folder, BEST_NODE_HIGH_PERFORMANCE_CONFIG,Comment,Bin_Path)
 }
 
 start()

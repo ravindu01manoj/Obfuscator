@@ -29,7 +29,7 @@ yarn add @ravindu01manoj/obfuscator
 const { obfuscate, BEST_NODE_HIGH_PERFORMANCE_CONFIG } = require('@ravindu01manoj/obfuscator')
 const Source_Folder = '/example/folder/'
 const Store_Folder = '/example/obstore/'
-
+const Bin_Path = '/example/.bin/' // its helps to ob only changed files
 const Comment = {
 	top: 'Javascript Project Obfuscator \n Coded By Ravindu Manoj\n\nModified File : #filename#\nModified Date : #date#\nModified Time : #time#',
 	bottom: 'Powered By https://www.npmjs.com/package/@ravindu01manoj/obfuscator',
@@ -42,8 +42,8 @@ const Comment = {
 
 function obfuscateFolder() {
 	console.log('starting...')
-	obfuscate(Source_Folder, Store_Folder, BEST_NODE_HIGH_PERFORMANCE_CONFIG,Comment)
-	console.log(Source_Folder + 'Folder Successfull Obfuscated To ' + Store_Folder)
+	obfuscate(Source_Folder, Store_Folder, BEST_NODE_HIGH_PERFORMANCE_CONFIG, Comment, Bin_Path)
+	console.log(Source_Folder + ' Folder Successful Obfuscated To ' + Store_Folder)
 }
 
 obfuscateFolder()
